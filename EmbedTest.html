@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Voxii - Embed Test</title>
+
+    <script type="text/javascript" src="ThirdPartyLibs/three.min.js"></script>
+    <script type="text/javascript" src="ThirdPartyLibs/debug.js"></script>
+    <script type="text/javascript" src="ThirdPartyLibs/jdataview.js"></script>
+    <script type="text/javascript" src="build/Voxii.js"></script>
+
+    <Style>
+        .VoxiiEmbed
+        {
+            float: left;
+            width: 350px;
+            height: 480px;
+            margin-left: 20px;
+            margin-top: 20px;
+            z-index: -1;
+
+            background-color: mediumpurple;
+            background-image: url('resources/embedBG.jpg');
+            background-size: cover;
+            background-position: center;
+        }
+    </Style>
+</head>
+<body>
+    <div id="Gumi" class="VoxiiEmbed" data-VoxiiModel="Models/chr_gumi.vox">
+
+    </div>
+
+    <div id="Other" class="VoxiiEmbed" data-VoxiiModel="Models/chr_rain.vox">
+
+    </div>
+
+    <div id="Other" class="VoxiiEmbed" data-VoxiiModel="Models/plasmarifle.vox">
+
+    </div>
+
+    <div id="Other" class="VoxiiEmbed" data-VoxiiModel="Models/iron_sword.vox">
+
+    </div>
+
+    <div id="Other" class="VoxiiEmbed" data-VoxiiModel="Models/Bunny.qb">
+
+    </div>
+
+    <div id="Other" class="VoxiiEmbed" data-VoxiiModel="Models/Ultimate Monster.qb">
+
+    </div>
+
+    <script>
+        Voxii.CreateEmbeds();
+    </script>
+</body>
+</html>
